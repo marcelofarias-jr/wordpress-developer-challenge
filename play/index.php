@@ -1,0 +1,121 @@
+<?php get_header();?>
+  	<!-- *********************Banner -->
+  	<section id="banner">
+  		<div>
+  			<span class="tag">Filmes</span>
+  			<span class="duracao">130m</span>
+  		</div>
+  		<div class="titulo">
+  			<h1>Pliquip nostrud laboris cupidatat</h1>
+  			<button class="btn btn-danger">Mais informações</button>
+  		</div>
+  	</section>
+      <script>
+
+          $(document).ready(function () {
+              $("#owl-example").owlCarousel({
+                navigation: false, // Show next and prev buttons
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                items: 5, // o responsive deve estar desativado se não ele vai puxar de lá os tamnhos
+                loop:true,
+                margin:5,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:3,
+                        nav:false
+                    },
+                    1000:{
+                        items:5,
+                        nav:true,
+                        loop:false
+                        }
+                    }
+                      },);
+                  });
+    </script>
+	<!-- *********************Filmes -->
+  <section >
+    <h2>Filmes</h2>
+      <div class="row">
+          <div class="large-12 columns">
+            <div class="owl-carousel owl-theme" id="owl-example">
+                <div class="item">
+                  <img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-gabriel-hohol-3593922.jpg">
+                </div>
+                <div class="item">
+                  <img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-ivy-son-3490257.jpg">
+                </div>
+                <div class="item">
+                  <img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-dazzle-jam-1190208.jpg">
+                </div>
+                <div class="item">
+                  <img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-dazzle-jam-1190208.jpg">
+                </div>
+                <div class="item">
+                  <img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-dazzle-jam-1190208.jpg">
+                </div>   
+            </div>
+          </div>
+      </div>
+  </section>
+  	<section id="filmes" class="sessão">
+  		<h2>Filmes</h2>
+  		<div class="d-flex owl-carousel owl-theme" id="owl-example">
+  			<div class="item filmesItem">
+  				<img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-gabriel-hohol-3593922.jpg" class="img-fluid">
+  				<span class="duracao">130m</span>
+  				<h3>In anim reprehenderit.</h3>
+  			</div>
+  			<div class="item filmesItem">
+  				<img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-ivy-son-3490257.jpg" class="img-fluid">
+  				<span class="duracao">130m</span>
+  				<h3>In anim reprehenderit.</h3>
+  			</div>
+  			<div class="item filmesItem">
+  				<img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-dazzle-jam-1190208.jpg" class="img-fluid">
+  				<span class="duracao">130m</span>
+  				<h3>In anim reprehenderit.</h3>
+  			</div>
+  			<div class="item filmesItem">
+  				<img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-pixabay-277253.jpg" class="img-fluid">
+  				<span class="duracao">130m</span>
+  				<h3>In anim reprehenderit.</h3>
+  			</div>
+  			<div class="item filmesItem">
+  				<img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-pixabay-2346.jpg" class="img-fluid">
+  				<span class="duracao">130m</span>
+  				<h3>In anim reprehenderit.</h3>
+  			</div>
+  			<div class=" item filmesItem">
+  				<img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-francesco-ungaro-1525041.jpg" class="img-fluid">
+  				<span class="duracao">130m</span>
+  				<h3>In anim reprehenderit.</h3>
+  			</div>
+  		</div>
+  	</section>
+<!-- *********************Documentários -->
+  	<section id="documentario" class="sessão">
+  		<h2>Documentários</h2>
+  		<div class="d-flex">
+  			<div class="filmesItem">
+  				<img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-gabriel-hohol-3593922.jpg" class="img-fluid">
+  			</div>
+  		</div>
+  	</section>
+<!-- *********************Series -->
+  	<section id="documentario" class="sessão">
+  		<h2>Séries</h2>
+  		<div class="d-flex">
+  			<div class="filmesItem">
+  				<img src="<?php bloginfo('template_directory'); ?>/assets/img/pexels-gabriel-hohol-3593922.jpg" class="img-fluid">
+  			</div>
+  		</div>
+  	</section>
+<?php get_footer();?>
